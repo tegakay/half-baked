@@ -36,3 +36,130 @@
     transform: rotate(360deg);
   }
 }
+
+/* nav */
+.nav-bar {
+  display: flex;
+  list-style: none;
+}
+
+ul li a {
+  background: none !important;
+  border: none;
+
+  padding: 0px 1.2rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #790c0c;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-search {
+  margin: 10px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  background-color: #1982fa;
+  max-height: 50px;
+}
+
+ul li a:hover {
+  color: #fad519;
+}
+
+.search {
+  padding: 0.4rem 1.4rem;
+  border: none;
+  border-radius: 5rem;
+  background-color: #fa1942;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.search:hover {
+  background-color: #f50c37;
+}
+
+/* end f nav */
+
+/* list */
+ul {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+}
+
+
+.articles {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.card {
+  background-color: var(--card-background-color);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.36);
+  transform: translateY(-6px);
+}
+
+.card .header .thumbnail {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.card .body {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card .body .subtitle {
+  font-size: 0.9rem;
+  color: var(--gray-light);
+}
+
+.card .body .tags {
+  width: 100%;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.card .body .tags .tag-item {
+  font-family: "Open Sans", "Ubuntu", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: var(--surface);
+  padding: 0.3rem 0.4rem;
+  border-radius: 2px;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.notelist {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
